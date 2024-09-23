@@ -2,8 +2,12 @@
 
 document.getElementById('donation-btn').addEventListener('click',function(){
     const donationInput =  parseFloat(document.getElementById('donation-input').value);
-    console.log(donationInput);
+    const donationMinus = parseFloat(document.getElementById('donation-minus').innerText);
+     if (isNaN(donationInput) || donationInput <= 0 || donationInput === '' || donationInput > donationMinus ) {
+      return alert('Invalid donation amount');
+     }
        // history page
+       
 
        const historyItem = document.createElement('div');
        historyItem.className = 'p-4 border-2 rounded-lg '
@@ -20,21 +24,27 @@ document.getElementById('donation-btn').addEventListener('click',function(){
 
      document.getElementById('donation-add').innerText = totalDonataion;
     
-     const donationMinus = parseFloat(document.getElementById('donation-minus').innerText);
+  
      const totalDonationMinus = donationMinus - donationInput;
      document.getElementById('donation-minus').innerText = totalDonationMinus;
 
+    modalFunction("my_modal_1");
+
      document.getElementById('donation-input').value = ''; 
-     alert('donation is complete');
+     
     
 });
+
 
 // donation for feni
 
 
 document.getElementById('donation-btn-2').addEventListener('click',function(){
     const donationInput =  parseFloat(document.getElementById('donation-input-2').value);
-    console.log(donationInput);
+    const donationMinus = parseFloat(document.getElementById('donation-minus').innerText);
+     if (isNaN(donationInput) || donationInput <= 0 || donationInput === '' || donationInput > donationMinus ) {
+      return alert('Invalid donation amount');
+     }
        // history page
 
        const historyItem = document.createElement('div');
@@ -51,12 +61,15 @@ document.getElementById('donation-btn-2').addEventListener('click',function(){
 
      document.getElementById('donation-add-2').innerText = totalDonataion;
     
-     const donationMinus = parseFloat(document.getElementById('donation-minus').innerText);
+   
      const totalDonationMinus = donationMinus - donationInput;
      document.getElementById('donation-minus').innerText = totalDonationMinus;
 
+    //  show modal
+    modalFunction("my_modal_1");
+
      document.getElementById('donation-input-2').value = ''; 
-     alert('donation is complete');
+   
     
 });
 
@@ -66,8 +79,12 @@ document.getElementById('donation-btn-2').addEventListener('click',function(){
 
 document.getElementById('donation-btn-3').addEventListener('click',function(){
     const donationInput =  parseFloat(document.getElementById('donation-input-3').value);
-    console.log(donationInput);
+    const donationMinus = parseFloat(document.getElementById('donation-minus').innerText);
+    if (isNaN(donationInput) || donationInput <= 0 || donationInput === '' || donationInput > donationMinus ) {
+     return alert('Invalid donation amount');
+    }
        // history page
+
 
        const historyItem = document.createElement('div');
        historyItem.className = 'p-4 border-2 rounded-lg '
@@ -84,13 +101,17 @@ document.getElementById('donation-btn-3').addEventListener('click',function(){
 
      document.getElementById('donation-add-3').innerText = totalDonataion;
     
-     const donationMinus = parseFloat(document.getElementById('donation-minus').innerText);
+    
      const totalDonationMinus = donationMinus - donationInput;
      document.getElementById('donation-minus').innerText = totalDonationMinus;
 
+     modalFunction("my_modal_1");
+
      document.getElementById('donation-input-3').value = ''; 
-     alert('donation is complete');
     
+    // modal open
+    // document.getElementById('my_modal_1').showModal();
+    // onclick="my_modal_1.showModal()"
 });
 
 // history button
@@ -123,24 +144,7 @@ document.getElementById('blog-btn').addEventListener('click',function(){
 
 document.getElementById('blog-btn').addEventListener("click", function() {
     window.location.href = "http://127.0.0.1:5500/blogs.html";
-    console.log('gahga'); 
   });
 
-  
-
-
-// document.getElementById('home-btn-2').addEventListener('click',function(){
-//     // location.replace('http://127.0.0.1:5500/blog.html');
-//     window.location.href ='http://127.0.0.1:5500/blog.html';
-//     console.log('gaj');
-    
-// });
-
-// const homeBtn = document.getElementById('home-btn-2')
-// homeBtn.addEventListener('click',function(){
-//     window.location.href = 'http://127.0.0.1:5500/index.html';
-//     console.log('fddgsahl');
-    
-// })
 
 
