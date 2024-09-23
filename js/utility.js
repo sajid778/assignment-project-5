@@ -8,7 +8,3 @@ function addBgPrimary(id) {
     document.getElementById(id).classList.remove('bg-gray-200' );
 }
 
-function inputValue(id) {
-    const inputValue =  parseFloat(document.getElementById(id).value);
-    return inputValue;
-}

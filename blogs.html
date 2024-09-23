@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+        <!-- google font link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    
+        <!-- tailwind daisyUi link -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- font awsome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: '#B4F461',
+                            nav: '#F9F7F3',
+                        },
+                        fontFamily: {
+                            lexend: 'Lexend',
+                        },
+                    }
+                }
+            }
+        </script>
+</head>
+<body class="font-lexend">
+    <header class="sticky top-0 bg-white">
+        <div class="bg-nav text-center">
+            <nav class="flex flex-col sm:flex-row justify-between w-11/12 items-center mx-auto sm:pt-7 pt-2 pb-2 sm:pb-14 ">
+              <button id="home-btn" class="bg-primary w-28 rounded-lg font-semibold text-xl p-2 sm:p-4">Home</button>
+              
+                <div class="flex items-center gap-4">
+                    <img src="assets/logo.png" alt="">
+                    <p class="font-semibold text-xl">Donate Bangladesh</p>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <img src="assets/coin.png" alt="">
+                    <p class="font-semibold text-xl text-gray-600"><span id="donation-minus">550</span>BDT</p>
+                </div>
+            </nav>
+            
+        </div>
+    </header>
+<main class="w-4/5 mx-auto mt-24">
+
+    <h1 class="text-5xl mb-10">Important FAQ <i class="fa-regular fa-circle-question"></i></h1>
+    <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+    </main>
+   <script src="js/blog.js"></script>
+</body>
+</html>

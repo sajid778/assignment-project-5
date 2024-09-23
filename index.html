@@ -21,17 +21,9 @@
                     colors: {
                         primary: '#B4F461',
                         nav: '#F9F7F3',
-
-                        couponeOne: '#ffbf0f',
-                        couponeTwo: '#f78c9c',
-                        mobileMenu: '#f7f8f8',
-                        body: '#03071299',
-                        buttonColor: 'rgba(29, 209, 0, 0.15)',
-
                     },
                     fontFamily: {
                         lexend: 'Lexend',
-                        Inter: 'Inter',
                     },
                 }
             }
@@ -44,7 +36,8 @@
     <header class="sticky top-0 bg-white">
         <div class="bg-nav text-center">
             <nav class="flex flex-col sm:flex-row justify-between w-11/12 items-center mx-auto sm:pt-7 pt-2 pb-2 sm:pb-14 ">
-                <button class="bg-primary w-28 rounded-lg font-semibold text-xl p-2 sm:p-4">Blog</button>
+                <button id="blog-btn" class="bg-primary w-28 rounded-lg font-semibold text-xl p-2 sm:p-4">Blog</button>
+
                 <div class="flex items-center gap-4">
                     <img src="assets/logo.png" alt="">
                     <p class="font-semibold text-xl">Donate Bangladesh</p>
@@ -63,19 +56,12 @@
             <button id="history-btn" class="bg-gray-200 p-2 sm:p-4 w-40 rounded-lg font-semibold text-xl">History</button>
         </div>
 
-        <!-- <div>
-            <p class="text-lg font-medium">${donationInput} Taka is Donate for Flood at Noakhali, Bangladesh</p>
-            <p class=""></p>
-        </div> -->
-
-        <div id="history-list" class="w-4/5 mx-auto space-y-4 mt-4">
-
-
+        <div id="history-list" class="hidden w-4/5 mx-auto space-y-4 mt-4">
         </div>
        
     </header>
 
-    <main>
+    <main id="card-container">
         <!-- 1st card -->
          <section class="w-4/5 mx-auto mt-24 border-2 p-8 rounded-xl flex flex-col sm:flex-row justify-between items-center space-y-6">
             <div class="sm:w-1/2 w-full">
@@ -139,11 +125,11 @@
                 </div>
          </section>
 
-         <footer class="bg-nav h-36 mt-4"></footer>
     </main>
+    <footer class="bg-nav h-36 mt-4"></footer>
 
-    <script src="script.js"></script>
-    <script src="utility.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/utility.js"></script>
 </body>
 
 </html>

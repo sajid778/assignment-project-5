@@ -93,12 +93,13 @@ document.getElementById('donation-btn-3').addEventListener('click',function(){
     
 });
 
+// history button
+
 document.getElementById('history-btn').addEventListener('click',function () {
     remvoeFunction('donation-page-btn');
-    addBgPrimary('history-btn') ;
-    
-
- 
+    addBgPrimary('history-btn'); 
+    document.getElementById('history-list').classList.remove('hidden');
+    document.getElementById('card-container').classList.add('hidden');
 })
 
 // donation page btn
@@ -106,7 +107,40 @@ document.getElementById('history-btn').addEventListener('click',function () {
 document.getElementById('donation-page-btn').addEventListener('click',function () {
     remvoeFunction('history-btn');
     addBgPrimary('donation-page-btn');
+
+    document.getElementById('history-list').classList.add('hidden');
+    document.getElementById('card-container').classList.remove('hidden');
    
 });
+
+// blog btn
+
+document.getElementById('blog-btn').addEventListener('click',function(){
+    // location.replace('http://127.0.0.1:5500/blog.html');
+    window.location.href ='http://127.0.0.1:5500/blog.html';
+});
+
+
+document.getElementById('blog-btn').addEventListener("click", function() {
+    window.location.href = "http://127.0.0.1:5500/blogs.html";
+    console.log('gahga'); 
+  });
+
+  
+
+
+// document.getElementById('home-btn-2').addEventListener('click',function(){
+//     // location.replace('http://127.0.0.1:5500/blog.html');
+//     window.location.href ='http://127.0.0.1:5500/blog.html';
+//     console.log('gaj');
+    
+// });
+
+// const homeBtn = document.getElementById('home-btn-2')
+// homeBtn.addEventListener('click',function(){
+//     window.location.href = 'http://127.0.0.1:5500/index.html';
+//     console.log('fddgsahl');
+    
+// })
 
 
