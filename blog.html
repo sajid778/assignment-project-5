@@ -36,7 +36,7 @@
     <header class="sticky top-0 bg-white">
         <div class="bg-nav text-center">
             <nav class="flex flex-col sm:flex-row justify-between w-11/12 items-center mx-auto sm:pt-7 pt-2 pb-2 sm:pb-14 ">
-              <button id="home-btn" class="bg-primary w-28 rounded-lg font-semibold text-xl p-2 sm:p-4">Home</button>
+              <button id="home-btn" class="bg-primary w-28 rounded-lg font-semibold text-xl p-2 sm:p-4 hover:bg-gray-400">Home</button>
               
                 <div class="flex items-center gap-4">
                     <img src="assets/logo.png" alt="">
@@ -56,29 +56,29 @@
     <h1 class="text-5xl mb-10">Important FAQ <i class="fa-regular fa-circle-question"></i></h1>
     <div class="collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" checked="checked" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>The Document Object MOdel is a programming interface for web document. The DOM is a tree like structure. When a webpage loads in our browser it turns the HTML code into a structure it can understant like a tree. WIth the DOM we can use JavaScript to interact with the webpage.</p>
         </div>
       </div>
       <div class="collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">How so you Select an element from the DOM?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>We can select an element from the DOM by ID,by Class, by TagName,by querySelector.Select by id we have to write dcoument.getElementById(),  and by class name we have to write .getElementByClassName(), by tag name we have to write .getElementByTagName(), by query selector we have to write for single element .querySelector() and for multiple elements.querySelectorAll().</p>
         </div>
       </div>
       <div class="collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>event delegation is a smart way to handle events in the DOM. instead of adding to every single element, we can add the event to a parent element and it will handle all the clicks for its child elements. event delegation is vary useful beacuse it is faster and time consuming.by using this it is easier to manage. and we have to write less code for using event delgation. </p>
         </div>
       <div class="collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attribute and styles using the DOM?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>We can use setAttribute(), getAttribute(), removeAttibute() for manipulate an element's attribute like src, href, alt etc.we can manipulate styles by directly modifying element.style.property.</p>
         </div>
       </div>
     </main>
