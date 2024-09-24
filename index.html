@@ -33,11 +33,11 @@
 
 <body class="font-lexend">
 
-    <header class="sticky top-0 backdrop-blur-2xl">
+    <header class="sticky top-0 backdrop-blur-2xl z-10">
         <div class="bg-nav text-center">
             <nav
                 class="flex flex-col sm:flex-row justify-between w-11/12 items-center mx-auto sm:pt-7 pt-2 pb-2 sm:pb-14 ">
-                <button id="blog-btn" class="bg-primary hover:bg-gray-400 w-28 rounded-lg font-semibold text-xl p-2 sm:p-4">Blog</button>
+                <button id="blog-btn" class="bg-primary w-28 rounded-lg font-semibold text-xl p-2 sm:p-4">Blog</button>
 
                 <div class="flex items-center gap-4">
                     <img src="assets/logo.png" alt="">
@@ -46,7 +46,7 @@
 
                 <div class="flex items-center gap-2">
                     <img src="assets/coin.png" alt="">
-                    <p class="font-semibold text-xl text-gray-600"><span id="donation-minus">1550</span>BDT</p>
+                    <p class="font-semibold text-xl text-gray-600"><span id="donation-minus">5550</span>BDT</p>
                 </div>
             </nav>
 
@@ -54,12 +54,13 @@
 
         <div class="w-11/12 mx-auto text-center space-x-4 mt-2 sm:mt-14">
             <button id="donation-page-btn"
-                class="bg-primary hover:bg-gray-400 w-40 rounded-lg font-semibold text-xl p-2 sm:p-4">Donation</button>
+                class="bg-primary  w-40 rounded-lg font-semibold text-xl p-2 sm:p-4">Donation</button>
             <button id="history-btn"
-                class="bg-gray-200 hover:bg-gray-400 p-2 sm:p-4 w-40 rounded-lg font-semibold text-xl">History</button>
+                class="bg-gray-200 p-2 sm:p-4 w-40 rounded-lg font-semibold text-xl">History</button>
         </div>
 
-        <div id="history-list" class="hidden w-4/5 mx-auto space-y-4 mt-4">
+        <div id="history-list" class="hidden w-4/5 mx-auto space-y-4 mt-4 z-0">
+       
         </div>
 
     </header>
@@ -86,24 +87,24 @@
 
                 <input id="donation-input" type="text" placeholder="Write Donation Amount"
                     class="input input-bordered w-full" />
-                <button id="donation-btn" 
+                <button id="donation-btn"
                     class="bg-primary hover:bg-gray-400 w-full rounded-lg font-semibold text-xl p-4">Donation</button>
-                    
-                    <!-- Open the modal -->
 
-                    <dialog id="my_modal_1" class="modal">
-                        <div class="modal-box space-y-4 text-center flex flex-col justify-center items-center">
-                          <h3 class="text-4xl  font-bold">congrates!</h3>
-                          <img  src="assets/coin.png" alt="">
-                          <p>You Have Donated for HumanKind</p>
-                          <p class="py-4 font-bold text-xl">Successfully</p>
-                          <div class="modal-action">
+                <!-- Open the modal -->
 
-                              <button id="confirm-btn" class="btn">Close confirmation</button>
-                         
-                          </div>
+                <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box space-y-4 text-center flex flex-col justify-center items-center">
+                        <h3 class="text-4xl  font-bold">congrates!</h3>
+                        <img src="assets/coin.png" alt="">
+                        <p>You Have Donated for HumanKind</p>
+                        <p class="py-4 font-bold text-xl">Successfully</p>
+                        <div class="modal-action">
+
+                            <button id="confirm-btn" class="btn">Close confirmation</button>
+
                         </div>
-                      </dialog>
+                    </div>
+                </dialog>
             </div>
 
         </section>
