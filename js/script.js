@@ -136,15 +136,9 @@ document.getElementById('donation-page-btn').addEventListener('click',function (
 
 // blog btn
 
-document.getElementById('blog-btn').addEventListener('click',function(){
-    // location.replace('http://127.0.0.1:5500/blog.html');
-    window.location.href ='http://127.0.0.1:5500/blog.html';
-});
-
-
-// document.getElementById('blog-btn').addEventListener("click", function() {
-//     window.location.href = "http://127.0.0.1:5500/blogs.html";
-//   });
+document.getElementById('blog-btn').addEventListener("click", function() {
+    window.location.href = "http://127.0.0.1:5500/blog.html";
+  });
 
 
 
